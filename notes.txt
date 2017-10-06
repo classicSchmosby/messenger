@@ -1,0 +1,30 @@
+Db: messenger
+Tables:
+1. users
+2. auditUserLogin
+3. messages
+
+Columns:
+1. users:
+	userId
+	username
+	userEmail?
+	userPassword
+	recentContacts?
+
+2. auditUserLogin:
+
+3. messages:
+	senderId (userId)
+	recipientId (userId)
+	dateSent
+	messageSent
+
+Views:
+
+PHP trimmedString:
+echo("<script type='text/javascript'>");
+	echo("var string = ($someVariable_pulledfromquery).value;");
+	echo("var length = 25;");
+	echo("var trimmedString = (string.substring(0, length) + '...');");
+echo("</script>");
